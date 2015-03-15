@@ -1,0 +1,33 @@
+TO initialize git
+
+git init
+
+This will created a .git hidden file in your current directory.
+
+
+git add <filename>
+
+this step will all the files to stagging area
+
+git commit -m "your message"
+
+This will commit the files to the repository
+
+before it you have to create a global username and email
+
+git config --global user.name <username>
+git config --global user.email <email id>
+
+To add it to the github repository
+
+git remote add origin <URL>
+git push origin master
+
+
+To create branch 
+
+git branch <branch name>
+
+to display branch 
+
+git branch
