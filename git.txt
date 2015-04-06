@@ -31,3 +31,17 @@ git branch <branch name>
 to display branch 
 
 git branch
+
+
+LWRP
+
+Light weight Resource Provider.
+This feature is used to create custom light weight resources with which you can simplify the way of writing cookbooks.
+
+Process:
+			
+Providers <<-------------LWRP <<-------------Recipes
+
+Recipes will call LWRP and will be used to pass the attributes to the resources. These attributes will be defined in LWRP.
+
+The actual execution of the of the resource will be done Providers.
