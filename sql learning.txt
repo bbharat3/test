@@ -14,3 +14,14 @@ c:\>tnsping orcl
 
 Used TNSNAMES adapter to resolve the alias
 Attempting to contact (DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = orcl)))OK (860 msec)
+
+
+Status of listener
+==================
+
+lsnrctl status
+
+Start/stop of listener
+===================
+
+lsnrctl start/stop
