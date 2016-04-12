@@ -1,0 +1,38 @@
+NFS Mount 
+----------
+
+
+step 1  => install nfs-utils nfs-utils-lib and rpc*(in case of redhat )
+	
+	yum install nfs-utils nfs-utils-lib
+
+step 2  => start nfs-server and  rpc
+
+	service nfs-server start
+	service rpcbind start
+
+step 3  => input /etc/exports
+
+	vi /etc/exports
+	
+	<directory for nfs mount >  <destination serverip>(rw,sync,no_root_squash)
+
+step 4  => exportfs -avr
+
+
+step 5 =>
+
+  step 1 : go to client machine and start nfs
+	
+	service nfs start
+
+  step 2 : execute the below command
+	
+	mount -t nfs <nfs server ip>:<shared directory>  <directory on client machine>
+
+  step 3 : make entry in fstab
+
+	vi /etc/fstab
+
+		<nfs server ip>:<shared directory>  <directory on client machine> nfs defaults 0 0
+	
