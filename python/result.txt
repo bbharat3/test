@@ -1,0 +1,3 @@
+
+port :80 opened
+port :10 opened
