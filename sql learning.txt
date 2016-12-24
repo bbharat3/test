@@ -1,0 +1,27 @@
+
+sqlplus / as sysdba
+
+To unlock an user manually:
+ALTER USER username ACCOUNT UNLOCK;
+
+to change his password:
+alter user username identified by new_password;
+
+Edited by: Fran on 26-nov-2012 3:22
+
+
+c:\>tnsping orcl
+
+Used TNSNAMES adapter to resolve the alias
+Attempting to contact (DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = orcl)))OK (860 msec)
+
+
+Status of listener
+==================
+
+lsnrctl status
+
+Start/stop of listener
+===================
+
+lsnrctl start/stop
